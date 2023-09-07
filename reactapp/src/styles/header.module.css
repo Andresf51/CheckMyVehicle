@@ -1,0 +1,62 @@
+.header {
+    background-image: linear-gradient(to right, rgba(143, 164, 233, 6), rgba(143, 164, 233, 0.3)), url(../../public/revision.jpg);
+    padding: 5rem 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 80px;
+        margin-right: 50px
+    }
+}
+
+.nuevoVehiculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 50px;
+    margin-top: 2px
+}
+
+.navegacion {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        margin: 0;
+    }
+}
+/* .navegacion a = le aplica a los link de next un estilo ya que el Link de next es una etiqueta <a>*/
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding: 0.5rem;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    border-radius: 5px
+}
+
+.navegacion a:hover {
+    background-color: darkblue;
+    border-radius: 5px
+}
